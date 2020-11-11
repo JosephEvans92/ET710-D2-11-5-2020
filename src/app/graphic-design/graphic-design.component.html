@@ -1,6 +1,9 @@
 <h3>Graphic Design Portfolio</h3>
 
-<div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
-  <span>{{ shipping.type }}</span>
-  <span>{{ shipping.price | currency }}</span>
+<div  *ngFor="let shipping of shippingCosts | async">
+ 
+  <img src="{{ shipping.artwork }}" alt="Girl in a jacket" height="357">
+
+   <h1>{{ shipping.name }}</h1>
+   
 </div>
